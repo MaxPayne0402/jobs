@@ -1,0 +1,42 @@
+@use "../base/variables" as *;
+
+.jobs__container {
+  min-height: 600px;
+
+}
+.job__content {
+  height: 125px;
+  width: 50rem;
+  background: $job-content-bg;
+  border-radius: 5px;
+}
+.logo__img {
+  width: 70px;
+}
+.title__content {
+  flex: 30%;
+}
+.benefits__contnet {
+  margin-top: 6rem;
+}
+.job__title {
+  font-weight: bold;
+}
+.advantage__title {
+  position: relative;
+  bottom: 1px;
+}
+.advantage__market {
+  color: $circle-market;
+}
+.advantage__front {
+  color: $circle-front;
+}
+.date__content {
+  position: relative;
+  left: 205px;
+  bottom: 40px;
+}
+.date__icon {
+  margin-top: 1px;
+}

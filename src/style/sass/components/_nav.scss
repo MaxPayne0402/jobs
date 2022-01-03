@@ -1,0 +1,41 @@
+@use "../base/variables" as *;
+
+.nav__container {
+  min-height: 100px;
+  background: $nav-background;
+}
+.leftside {
+  width: 25%;
+}
+.search__icon {
+  color: $light-gray;
+  font-size: 30px;
+  position: absolute;
+  margin-left: 21.35rem;
+  margin-top: 0.2rem;
+}
+.nav__link {
+  font-size: 17px;
+}
+#search {
+  outline: none;
+  border: none;
+  min-width: 23rem;
+  height: 2.2rem;
+  background: $search-input;
+  color: $lighter-gray;
+}
+#login_btn {
+  border: none;
+  width: 8.5rem;
+  height: 2.3rem;
+  background-color: $login-btn;
+  color: $white;
+  transition: 0.4s all;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: $login-btn-hover;
+    color: $white;
+  }
+}

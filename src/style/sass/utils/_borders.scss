@@ -1,0 +1,12 @@
+.border {
+    &__5 {
+        border-radius: 5px;
+    }
+    &__3 {
+        border-radius: 3px;
+    }
+
+    &__circle {
+        border-radius: 50%;
+    }
+}

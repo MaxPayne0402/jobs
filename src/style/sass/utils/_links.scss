@@ -1,0 +1,28 @@
+@use "../base/variables" as *;
+
+.link {
+    color: $link-color;
+    text-decoration: none;
+    &:hover {
+        color: $nav-link;
+    }
+}
+.nav__link {
+    transition: 0.3s all;
+}
+
+.footer__link {
+    color: $white;
+    transition: 0.3s all;
+    &:hover {
+        color: $footer-link;
+    }
+}
+/*.link__form {
+    color: $white;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+.link__form:hover {
+    color: $black;
+}*/

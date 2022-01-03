@@ -1,0 +1,1 @@
+sass --watch D:\xampp\htdocs\project\src\style\sass\main.scss D:\xampp\htdocs\project\src\style\bundle.css
