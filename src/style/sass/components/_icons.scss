@@ -1,0 +1,8 @@
+@use "../base/variables" as *;
+
+.ig__icon {
+  background-image: $icon-ig;
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}

@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { RiTeamFill, RiAddBoxFill } from "react-icons/ri";
 import { MdPrivacyTip, MdManageAccounts } from "react-icons/md";
-import { FaBook } from "react-icons/fa";
+import { FaBook, FaInstagramSquare } from "react-icons/fa";
 import {
   IoInformationCircleSharp,
   IoHardwareChipSharp,
@@ -9,6 +9,7 @@ import {
 } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { SiMinutemailer } from "react-icons/si";
+import { IoLogoInstagram } from "react-icons/io5";
 
 import {
   AiFillYoutube,
@@ -182,7 +183,7 @@ class Footer extends Component {
                 <AiFillFacebook />
               </i>
               <i className="socials__icon m__5">
-                <AiFillInstagram />
+                <FaInstagramSquare  className="ig__icon"/>
               </i>
               <i className="socials__icon m__5">
                 <AiOutlineTwitter />

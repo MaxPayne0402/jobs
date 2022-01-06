@@ -1,5 +1,7 @@
 import { Component } from "react";
 import Company from "../../style/images/company.png";
+import Post1 from "../../style/images/post1.jpg";
+import Post2 from "../../style/images/post2.jpg";
 import { FaCircle } from "react-icons/fa";
 import { GoCalendar } from "react-icons/go";
 import { IoLocationSharp } from "react-icons/io5";
@@ -7,8 +9,8 @@ import { IoLocationSharp } from "react-icons/io5";
 class Main extends Component {
   render() {
     return (
-      <main>
-        <div className="container center__horizontaly container__column jobs__container">
+      <main className="container center__horizontaly m__50">
+        <div className="container center__horizontaly container__column jobs__container m__25">
           <div className="container center__horizontaly m__25">
             <div className="container center__vert job__content">
               <div className="logo__company ml__20">
@@ -27,7 +29,7 @@ class Main extends Component {
               <div className="container primary__content">
                 <div className="container position__contnet mr__10">
                   <i className="mr__5 position__icon">
-                    <IoLocationSharp/>
+                    <IoLocationSharp />
                   </i>
                   <span className="position__text">Wrocław</span>
                 </div>
@@ -72,7 +74,7 @@ class Main extends Component {
               <div className="container primary__content">
                 <div className="container position__contnet mr__10">
                   <i className="mr__5 position__icon">
-                    <IoLocationSharp/>
+                    <IoLocationSharp />
                   </i>
                   <span className="position__text">Katowice</span>
                 </div>
@@ -117,7 +119,7 @@ class Main extends Component {
               <div className="container primary__content">
                 <div className="container position__contnet mr__10">
                   <i className="mr__5 position__icon">
-                    <IoLocationSharp/>
+                    <IoLocationSharp />
                   </i>
                   <span className="position__text">Warszawa</span>
                 </div>
@@ -144,6 +146,36 @@ class Main extends Component {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="container container__column news__container m__10 border__5">
+          <span className="news__title">Nowości</span>
+          <div className="container container__column post__content mt__25">
+            <img src={Post1} alt="post" className="post__img"></img>
+            <div className="container container__column infpost__content">
+            <span className="post__title mt__10">
+            Lorem Ipsum has been the industry's standard dummy
+            </span>
+            <span className="post__text mt__5">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </span>
+            </div>
+          </div>
+
+          <div className="container container__column post__content mt__25">
+            <img src={Post2} alt="post" className="post__img"></img>
+            <div className="container container__column infpost__content">
+            <span className="post__title mt__10">
+            Lorem Ipsum has been the industry's standard dummy
+            </span>
+            <span className="post__text mt__5">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </span>
+            </div>
+          </div>
+
         </div>
       </main>
     );

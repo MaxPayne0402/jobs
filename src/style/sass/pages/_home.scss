@@ -2,7 +2,6 @@
 
 .jobs__container {
   min-height: 600px;
-
 }
 .job__content {
   height: 125px;
@@ -39,4 +38,28 @@
 }
 .date__icon {
   margin-top: 1px;
+}
+.news__container {
+  background: $post-bg;
+  padding: 20px;
+}
+.news__icon {
+  font-size: 28px;
+}
+.news__title {
+  font-size: 28px;
+  font-weight: bold;
+}
+.post__img {
+  width: 250px;
+}
+.post__title {
+  font-size: 17px;
+  font-weight: bold;
+}
+.post__text {
+  font-size: 15px;
+}
+.infpost__content {
+  width: 250px;
 }
