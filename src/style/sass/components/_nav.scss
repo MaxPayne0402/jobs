@@ -1,7 +1,7 @@
 @use "../base/variables" as *;
 
 .nav__container {
-  min-height: 100px;
+  min-height: 100px;  
   background: $nav-background;
 }
 .leftside {
@@ -16,6 +16,9 @@
 }
 .nav__link {
   font-size: 17px;
+}
+.search__content {
+  position: relative;
 }
 #search {
   outline: none;
@@ -39,3 +42,6 @@
     color: $white;
   }
 }
+
+/********************************************************************/
+

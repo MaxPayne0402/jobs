@@ -1,0 +1,115 @@
+@use "../base/variables" as *;
+
+.form__container {
+  min-height: 519px;
+}
+.form__container {
+  min-height: 519px;
+}
+.form__content {
+  background: $form-bg;
+  padding: 1rem;
+}
+.form__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.form__desc {
+  font-size: 17px;
+}
+.form__input {
+  outline: none;
+  border: none;
+  height: 35px;
+  width: 20rem;
+  font-size: 18px;
+  border-radius: 3px;
+}
+.form__forget {
+  transition: 0.3s all;
+  &:hover {
+    color: $forget-link;
+  }
+}
+.form__btn {
+  height: 40px;
+  width: 20rem;
+  border: none;
+  border-radius: 2px;
+  background: $form-btn;
+  color: $white;
+  cursor: pointer;
+  transition: 0.3s all;
+
+  &:hover {
+    background: $form-btn-hover;
+  }
+}
+.hr__text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+
+  &:before {
+    content: "";
+    // use the linear-gradient for the fading effect
+    // use a solid background color for a solid bar
+    background: linear-gradient(to right, transparent, $form-hr, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  &:after {
+    content: attr(content);
+    position: relative;
+    color: black;
+    padding: 0 0.5em;
+    line-height: 1.5em;
+    // this is really the only tricky part, you need to specify the background color of the container element...
+    color: $white;
+    background-color: $form-bg;
+  }
+}
+.gmail__btn {
+  width: 95%;
+  border: 1px red solid;
+  height: 42px;
+}
+
+.newacc__link {
+  transition: 0.3s all;
+
+  &:hover {
+    color: $newacc-link;
+  }
+}
+.password__container {
+  position: relative;
+}
+.password__eye {
+  position: absolute;
+  top: 2.1rem;
+  right: 0.5rem;
+  font-size: 21px;
+  color: $eye-password;
+  cursor: pointer;
+  transition: 0.2s all;
+
+  &:hover {
+    color: $eye-password-hover;
+  }
+}
+
+.half__input {
+  width: 9rem;
+}
+.rules__container {
+  width: 20rem;
+  text-align: center;
+}

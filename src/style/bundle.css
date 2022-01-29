@@ -455,6 +455,12 @@ template {
 .mt__10 {
   margin-top: 10px;
 }
+.mt__15 {
+  margin-top: 15px;
+}
+.mt__20 {
+  margin-top: 20px;
+}
 .mt__25 {
   margin-top: 25px;
 }
@@ -527,6 +533,11 @@ template {
 .link__form:hover {
     color: $black;
 }*/
+body {
+  background-image: url("/src/style/images/bg1.jpg");
+  color: white;
+}
+
 .jobs__container {
   min-height: 600px;
 }
@@ -608,9 +619,136 @@ template {
   width: 250px;
 }
 
-body {
-  background-image: url("/src/style/images/bg1.jpg");
+.showmore__btn {
+  width: 120px;
+  height: 35px;
+  border: none;
+  background: #03244e;
   color: white;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.showmore__btn:hover {
+  background: #03326e;
+}
+
+.form__container {
+  min-height: 519px;
+}
+
+.form__container {
+  min-height: 519px;
+}
+
+.form__content {
+  background: #03142b;
+  padding: 1rem;
+}
+
+.form__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form__desc {
+  font-size: 17px;
+}
+
+.form__input {
+  outline: none;
+  border: none;
+  height: 35px;
+  width: 20rem;
+  font-size: 18px;
+  border-radius: 3px;
+}
+
+.form__forget {
+  transition: 0.3s all;
+}
+.form__forget:hover {
+  color: silver;
+}
+
+.form__btn {
+  height: 40px;
+  width: 20rem;
+  border: none;
+  border-radius: 2px;
+  background: rgba(4, 37, 109, 0.527);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.form__btn:hover {
+  background: rgba(4, 37, 109, 0.904);
+}
+
+.hr__text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+}
+.hr__text:before {
+  content: "";
+  background: linear-gradient(to right, transparent, #e0e0e0, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr__text:after {
+  content: attr(content);
+  position: relative;
+  color: black;
+  padding: 0 0.5em;
+  line-height: 1.5em;
+  color: white;
+  background-color: #03142b;
+}
+
+.gmail__btn {
+  width: 95%;
+  border: 1px red solid;
+  height: 42px;
+}
+
+.newacc__link {
+  transition: 0.3s all;
+}
+.newacc__link:hover {
+  color: #bdbdbd;
+}
+
+.password__container {
+  position: relative;
+}
+
+.password__eye {
+  position: absolute;
+  top: 2.1rem;
+  right: 0.5rem;
+  font-size: 21px;
+  color: #494949;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.password__eye:hover {
+  color: #2c2c2c;
+}
+
+.half__input {
+  width: 9rem;
+}
+
+.rules__container {
+  width: 20rem;
+  text-align: center;
 }
 
 .nav__container {
@@ -632,6 +770,10 @@ body {
 
 .nav__link {
   font-size: 17px;
+}
+
+.search__content {
+  position: relative;
 }
 
 #search {
@@ -657,6 +799,7 @@ body {
   color: white;
 }
 
+/********************************************************************/
 .footer__container {
   background: rgba(0, 0, 0, 0.603);
 }
@@ -682,11 +825,9 @@ body {
 }
 
 .last__footer {
-  padding: 3px;
   background: rgba(19, 19, 19, 0.212);
   width: 100%;
-  padding-right: 350px;
-  padding-left: 350px;
+  padding: 3px 20rem 3px 20rem;
 }
 
 .other__content {
@@ -697,10 +838,20 @@ body {
   font-size: 34px;
 }
 
-.ig__icon {
-  background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.yt__icon {
+  color: #c4302b;
+}
+
+.fb__icon {
+  color: #3b5998;
+}
+
+.tw__icon {
+  color: #1da1f2;
+}
+
+.ln__icon {
+  color: #0e76a8;
 }
 
 /*# sourceMappingURL=bundle.css.map */

@@ -1,8 +1,16 @@
 @use "../base/variables" as *;
 
-.ig__icon {
-  background-image: $icon-ig;
-  -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 
+.yt__icon {
+  color: $icon-yt;
+}
+.fb__icon {
+  color: $icon-fb;
+}
+.tw__icon {
+  color: $icon-tw;
+}
+
+.ln__icon {
+  color: $icon-ln;
 }

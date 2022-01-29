@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { RiTeamFill, RiAddBoxFill } from "react-icons/ri";
 import { MdPrivacyTip, MdManageAccounts } from "react-icons/md";
-import { FaBook, FaInstagramSquare } from "react-icons/fa";
+import { FaBook } from "react-icons/fa";
 import {
   IoInformationCircleSharp,
   IoHardwareChipSharp,
@@ -9,20 +9,7 @@ import {
 } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { SiMinutemailer } from "react-icons/si";
-import { IoLogoInstagram } from "react-icons/io5";
-
-import {
-  AiFillYoutube,
-  AiOutlineYoutube,
-  AiFillFacebook,
-  AiOutlineFacebook,
-  AiFillInstagram,
-  AiOutlineInstagram,
-  AiOutlineTwitter,
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiOutlineLinkedin,
-} from "react-icons/ai";
+import Icons from "../icons/Icons";
 
 class Footer extends Component {
   render() {
@@ -175,23 +162,9 @@ class Footer extends Component {
                 © 2022 Brand sth, All rights reserved.
               </span>
             </div>
-            <div className="socials__content mr__5">
-              <i className="socials__icon m__5">
-                <AiFillYoutube />
-              </i>
-              <i className="socials__icon m__5">
-                <AiFillFacebook />
-              </i>
-              <i className="socials__icon m__5">
-                <FaInstagramSquare  className="ig__icon"/>
-              </i>
-              <i className="socials__icon m__5">
-                <AiOutlineTwitter />
-              </i>
-              <i className="socials__icon m__5">
-                <AiFillLinkedin />
-              </i>
-            </div>
+
+              <Icons/>
+
           </section>
         </div>
       </footer>

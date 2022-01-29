@@ -146,6 +146,9 @@ class Main extends Component {
               </div>
             </div>
           </div>
+          <div className="container center__horizontaly">
+            <button className="showmore__btn border__3">Pokaż więcej</button>
+          </div>
         </div>
 
         <div className="container container__column news__container m__10 border__5">
@@ -153,29 +156,28 @@ class Main extends Component {
           <div className="container container__column post__content mt__25">
             <img src={Post1} alt="post" className="post__img"></img>
             <div className="container container__column infpost__content">
-            <span className="post__title mt__10">
-            Lorem Ipsum has been the industry's standard dummy
-            </span>
-            <span className="post__text mt__5">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </span>
+              <span className="post__title mt__10">
+                Lorem Ipsum has been the industry's standard dummy
+              </span>
+              <span className="post__text mt__5">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </span>
             </div>
           </div>
 
           <div className="container container__column post__content mt__25">
             <img src={Post2} alt="post" className="post__img"></img>
             <div className="container container__column infpost__content">
-            <span className="post__title mt__10">
-            Lorem Ipsum has been the industry's standard dummy
-            </span>
-            <span className="post__text mt__5">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </span>
+              <span className="post__title mt__10">
+                Lorem Ipsum has been the industry's standard dummy
+              </span>
+              <span className="post__text mt__5">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </span>
             </div>
           </div>
-
         </div>
       </main>
     );

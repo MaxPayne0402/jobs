@@ -1,49 +1,41 @@
 import { Component } from "react";
-import { IoSearchCircleOutline } from "react-icons/io5";
+
+import NavNormal from "../main/NavNormal";
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      windowWidth: window.innerWidth,
+      width70pr: window.innerWidth * 0.7,
+    };
+  }
+
+  handleResize = (e) => {
+    this.setState({ windowWidth: window.innerWidth });
+  };
+
+  componentDidMount() {
+    window.addEventListener("resize", this.handleResize);
+  }
   render() {
+    const windowWidth = this.state.windowWidth;
+    const width70pr = this.state.width70pr;
     return (
       <header>
-        <div className="container center__horizontaly center__vert nav__container">
-          <section className="leftside">
-            <div className="logo__container"></div>
-
-            <div className="search__container mr__50">
-              <label className="search__content container">
-                <input type="text" className="border__3" id="search" placeholder="Type something..." autoComplete="off" ></input>
-                <i className="search__icon">
-                  <IoSearchCircleOutline />
-                </i>
-              </label>
-            </div>
-          </section>
-          <nav id="links" className="navbar mr__50">
-            <div className="navbar__wrappers">
-              <ul className="container__row">
-                <li className="container">
-                  <a href="/" className="nav__link link">
-                    Strona główna
-                  </a>
-                </li>
-                <li className="container ml__25">
-                  <a href="/" className="nav__link link">
-                    Prace
-                  </a>
-                </li>
-                <li className="container ml__25">
-                  <a href="/" className="nav__link link">
-                    Nowości {/*Blog*/}
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-
-          <div className="login__container ml__10">
-            <button className="border__3" id="login_btn">Zaloguj się</button>
-          </div>
-        </div>
+        {(() => {
+          if (windowWidth <= width70pr) return "Siema" + windowWidth;
+          else
+            return (
+              "Aktualnie " +
+              windowWidth +
+              " Docelowo:" +
+              windowWidth * 0.7 +
+              " test: " +
+              width70pr
+            );
+        })()}
+        <NavNormal />
       </header>
     );
   }
