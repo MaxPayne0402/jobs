@@ -1,26 +1,33 @@
 <?php
+header("Access-Control-Allow-Origin: http://localhost:3000");
+header("Access-Control-Allow-Headers: Content-Type");
 
-if (isset($_POST['sub'])) {
+ini_set('display_errors', 0);
 
-    //Grabbing the data
+/*echo json_encode("success");
+exit;*/
 
-    $uid = $_POST['uid'];
-    $pwd = $_POST['pwd'];
+$rest_json = file_get_contents("php://input");
+$_POST = json_decode($rest_json, true);
 
-    // Instantiate SignupContr class
-    include "../classes/dbh.classes.php";
-    include "../classes/login.classes.php";
-    include "../classes/login-contr.classes.php";
+$uid = $_POST['uid'];
+$pwd = $_POST['pwd'];
 
-    $login = new LoginContr($uid, $pwd);
+// Instantiate SignupContr class
+include "../classes/dbh.classes.php";
+include "../classes/login.classes.php";
+include "../classes/login-contr.classes.php";
 
-    //  Running error handlers and user signup
+$login = new LoginContr($uid, $pwd);
 
-    $login->loginUser();
+//  Running error handlers and user signup
 
-    // Going to back to front page
+$login->loginUser();
 
-    header("Location: ../index.php?success=true");
-    
+echo json_encode("SUCCESSFUL!");
 
-}
+// Going to back to front page
+
+//header("Location: ../index.php?success=true");
+
+

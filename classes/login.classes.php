@@ -1,22 +1,22 @@
 <?php
 
-
 class Login extends Dbh
 {
-
     protected function getUser($uid, $pwd)
     {
         $stmt = $this->connect()->prepare("SELECT users_pwd FROM users WHERE users_uid = ? OR users_email= ?;");
 
         if (!$stmt->execute(array($uid, $pwd))) {
             $stmt = null;
-            header("Location: ../index.php?error=stmtfailed");
+           // header("Location: ../index.php?error=stmtfailed");
+            echo json_encode("stmtfailed");
             exit;
         }
 
         if ($stmt->rowCount() == 0) {
             $stmt = null;
-            header("Location: ../index.php?error=usernotfound");
+            echo json_encode("usernotfound");
+           // header("Location: ../index.php?error=usernotfound");
             exit;
         }
 
@@ -26,20 +26,23 @@ class Login extends Dbh
 
         if ($checkPwd == false) {
             $stmt = null;
-            header("Location: ../index.php?error=wrongpassword");
+            //header("Location: ../index.php?error=wrongpassword");
+            echo json_encode("wrongpassword");
             exit;
         } else {
             $stmt = $this->connect()->prepare("SELECT * FROM users WHERE users_uid = ? OR users_email= ? AND users_pwd = ?;");
             
             if (!$stmt->execute(array($uid, $uid, $pwd))) {
                 $stmt = null;
-                header("Location: ../index.php?error=stmtfailed");
+               // header("Location: ../index.php?error=stmtfailed");
+               echo json_encode("stmtfailed");
                 exit;
             }
 
             if ($stmt->rowCount() == 0) {
                 $stmt = null;
-                header("Location: ../index.php?error=usernotfound");
+                //header("Location: ../index.php?error=usernotfound");
+                echo json_encode("usernotfound");
                 exit;
             }
 
