@@ -1,2 +1,1 @@
-To jest moj pierwszy z lepszych projektów z wykorzystaniem technologii React. Oczywiście nadal pracuje nad aplikacją, dużo jeszcze zostało,
-gdyż staram się ją zaprojektować i zaprogramować sam :) Tak jak wspomniałem w CV strona to coś w podobie pracuj.pl 
+
